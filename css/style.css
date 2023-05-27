@@ -1,0 +1,290 @@
+:root{
+    font-size: 16px;
+}
+
+*{
+    box-sizing: border-box;
+    border: 0;
+    margin: 0;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(8, 1fr) 0.2fr repeat(3, 1fr);
+    grid-template-rows: 1fr 0.2fr repeat(2, 1fr) repeat(2, 0.3fr) repeat(2, 1fr) 0.2fr repeat(3, 1fr);
+    height: 100vh;
+    width: 100vw;
+}
+  
+.parte-superior{
+    grid-area: 2 / 4 / 6 / 9; 
+    background-color: rgb(41, 41, 41);
+    height: 100%;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+  
+.pantalla-superior{ 
+    grid-area: 3 / 5 / 5 / 8; 
+    background-color: rgb(255, 255, 255);
+    height: 80%;
+    width: 60%;
+    box-shadow: 0px 0px 10px #858585 inset;
+    box-shadow: 0px 0px 15px black;
+    background-color: lightblue;
+}
+  
+.parte-inferior{ 
+    grid-area: 6 / 4 / 10 / 9; 
+    background-color: rgb(66, 66, 66);
+    height: 100%;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+  
+.pantalla-inferior{ 
+    grid-area: 7 / 5 / 9 / 8; 
+    background-color: rgb(255, 255, 255);
+    height: 80%;
+    width: 60%;
+    box-shadow: 0px 0px 10px #858585 inset;
+    box-shadow: 0px 0px 15px black; 
+    background-color: lightblue;
+}
+
+.contenedorbotones{
+    grid-area: 8 / 8 / 9 / 9;
+    width: 20%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.botones{  
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-area: 7 / 8 / 8 / 9;
+    width: 100%;
+    height: 60%;
+    justify-content: center;
+}  
+
+.botonx{ 
+    grid-area: 1 / 2 / 2 / 3; 
+    background-color: white;
+    width: 85%;
+    height: 60%;
+    border-radius: 25px;
+    box-shadow: 0px 0px 10px #858585 inset;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20%;
+    justify-self: center;
+    align-self: self-end;
+}
+  
+.botona{grid-area: 2 / 3 / 3 / 4; 
+    background-color: white;
+    width: 85%;
+    height: 60%;
+    border-radius: 25px;
+    box-shadow: 0px 0px 10px #858585 inset;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-self: left;
+    align-self: center;
+}
+  
+.botonb{ 
+    grid-area: 3 / 2 / 4 / 3; 
+    background-color: white;
+    width: 85%;
+    height: 60%;
+    border-radius: 25px;
+    box-shadow: 0px 0px 10px #858585 inset;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-self: center;
+}
+  
+.botony{ 
+    grid-area: 2 / 1 / 3 / 2; 
+    background-color: white;
+    width: 85%;
+    height: 60%;
+    border-radius: 25px;
+    box-shadow: 0px 0px 10px #858585 inset;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-self: right;
+    align-self: center;
+}
+  
+.contenedorstartselect{
+    width: 100%;
+    height: 40%;
+    display: flex;
+}
+
+.start{ 
+    display: flex;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 5%;
+}
+
+.textobotones{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: self-start;
+    justify-content: center;
+    gap: 10%;
+} 
+
+.boton-start{ 
+    grid-area: 2 / 2 / 3 / 3; 
+    background-color: white;
+    width: 35%;
+    height: 18%;
+    border-radius: 30px;
+    box-shadow: 0px 0px 3px #b9b9b9 inset;
+}
+  
+.boton-select{ 
+    grid-area: 3 / 2 / 4 / 3; 
+    background-color: white;
+    width: 35%;
+    height: 18%;
+    border-radius: 30px;
+    box-shadow: 0px 0px 3px #b9b9b9 inset;
+    margin-top: 3%;
+}
+
+.cruceta{  
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-area: 7 / 4 / 9 / 5;
+    width: 20%;
+    height: 30%;
+    margin-bottom: 10%;
+}
+  
+.cruceta-arriba{ 
+    grid-area: 1 / 2 / 2 / 3; 
+    box-shadow: 0px 0px 10px #858585 inset;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20%;
+    justify-self: center;
+    align-self: self-end;
+    width: 70%;
+    height: 100%;
+    background-color: white;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+  
+.cruceta-izq{ 
+    grid-area: 2 / 1 / 3 / 2; 
+    box-shadow: 0px 0px 10px #858585 inset;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-self: right;
+    align-self: center;
+    width: 70%;
+    height: 100%;
+    background-color: white;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+  
+.cruceta-der{ 
+    grid-area: 2 / 3 / 3 / 4; 
+    box-shadow: 0px 0px 10px #858585 inset;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-self: left;
+    align-self: center;
+    width: 70%;
+    height: 100%;
+    background-color: white;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+  
+.cruceta-abajo{ 
+    grid-area: 3 / 2 / 4 / 3; 
+    box-shadow: 0px 0px 5px #858585 inset;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-self: center;
+    width: 70%;
+    height: 100%;
+    background-color: white;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+  
+.cruceta-centro{ 
+    grid-area: 2 / 2 / 3 / 3; 
+    box-shadow: 0px 0px 10px #858585 inset;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-self: center;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    border-radius: 2px;
+}
+  
+.altavoces{ 
+    grid-area: 3 / 8 / 4 / 9; 
+}
+  
+.altavoces-izquierda{ 
+    grid-area: 3 / 4 / 4 / 5; 
+}
+  
+.boton-encendido{ 
+    grid-area: 7 / 8 / 8 / 9; 
+    background-color: #3D3434;
+    width: 5%;
+    height: 30%;
+    display: flex;
+    align-self: center;
+
+}
+  
+.microfono{ 
+    grid-area: 6 / 6 / 7 / 7; 
+}
+  
+.bateria{ 
+    grid-area: 6 / 8 / 7 / 9; 
+}
+  
