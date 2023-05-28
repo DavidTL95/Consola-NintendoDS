@@ -14,19 +14,23 @@
     grid-template-rows: 1fr 0.2fr repeat(2, 1fr) repeat(2, 0.3fr) repeat(2, 1fr) 0.2fr repeat(3, 1fr);
     height: 100vh;
     width: 100vw;
+    background-color: #d4d4d4;
 }
   
 .parte-superior{
     grid-area: 2 / 4 / 6 / 9; 
-    background-color: rgb(41, 41, 41);
+    background-color: rgb(255, 255, 255);
     height: 80%;
-    width: 60%;
+    width: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
     align-self: flex-end;
+    box-shadow: 0px 0px 5px #000000 inset;
+    box-shadow: 0px 0px 5px #000000;
+    border: 10px solid rgb(236, 236, 236);
 }
   
 .pantalla-superior{ 
@@ -35,25 +39,82 @@
     height: 80%;
     width: 40%;
     box-shadow: 0px 0px 10px #858585 inset;
-    box-shadow: 0px 0px 15px black;
-    background-color: lightblue;
+    box-shadow: 0px 0px 5px black;
+    border: 10px solid rgb(236, 236, 236);
 }
   
 .pantalla-superior img{
     width: 100%;
     height: 100%;
+    box-shadow: 0px 0px 10px #000000;
+    box-shadow: 0px 0px 5px #00f7ff inset;
+    border: 2px solid rgb(236, 236, 236);
 }
 
 .parte-inferior{ 
     grid-area: 6 / 4 / 10 / 9; 
-    background-color: rgb(66, 66, 66);
+    background-color: rgb(255, 255, 255);
     height: 80%;
-    width: 60%;
+    width: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
+    box-shadow: 0px 0px 5px #000000 inset;
+    box-shadow: 0px 0px 5px #000000;
+    border: 10px solid rgb(236, 236, 236);
+}
+
+.indicador{
+    grid-area: 5 / 4 / 7 / 7;
+    background-color: rgb(255, 255, 255);
+    width: 83.5%;
+    height: 30%;
+    align-self: center;
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr;
+    grid-template-rows: 1fr;
+    box-shadow: 0px 0px 5px #000000 inset;
+}
+
+.micro{
+    grid-area: 1 / 2 / 2 / 3;
+    background-color: black;
+    justify-self: center;
+    align-self: center;
+    width: 5%;
+    height: 50%;
+    border-radius: 40%;
+}
+
+.bisagra{
+    grid-area: 1 / 1 / 2 / 2;
+    background-color: rgb(243, 243, 243);
+    justify-self: left;
+    width: 20%;
+    height: 100%;
+    box-shadow: 0px 0px 5px #000000 inset;
+}
+
+.bisagra2{
+    grid-area: 1 / 3 / 2 / 4;
+    background-color: rgb(255, 255, 255);
+    justify-self: center;
+    width: 20%;
+    height: 100%;
+    display: flex;
+    justify-self: right;
+    box-shadow: 0px 0px 5px #000000 inset;
+    justify-content: center;
+    align-items: center;
+}
+
+.bateria{
+    background-color: rgb(0, 255, 13);
+    width: 10%;
+    height: 60%;
+    border-radius: 40%;
 }
   
 .pantalla-inferior{ 
@@ -64,13 +125,14 @@
     box-shadow: 0px 0px 10px #858585 inset;
     box-shadow: 0px 0px 15px black; 
     background-color: lightblue;
+    box-shadow: 0px 0px 5px black;
+    border: 10px solid rgb(236, 236, 236);
 }
 
 .pantalla-inferior img{
     width: 100%;
     height: 100%;
 }
-
 
 .contenedorbotones{
     grid-area: 8 / 8 / 9 / 9;
@@ -90,6 +152,7 @@
     justify-content: center;
     justify-self: center;
     align-self: center;
+    margin-top: 10%;
 }  
 
 .botonx{ 
@@ -107,6 +170,11 @@
     justify-self: center;
     align-self: self-end;
 }
+
+.botonx:active{ 
+    box-shadow: 0px 2px 2px #000000 inset;
+    background-color: rgb(165, 165, 165);
+} 
   
 .botona{grid-area: 2 / 3 / 3 / 4; 
     background-color: white;
@@ -121,6 +189,11 @@
     justify-self: left;
     align-self: center;
 }
+
+.botona:active{ 
+    box-shadow: 0px 2px 2px #000000 inset;
+    background-color: rgb(165, 165, 165);
+} 
   
 .botonb{ 
     grid-area: 3 / 2 / 4 / 3; 
@@ -135,6 +208,11 @@
     align-items: center;
     justify-self: center;
 }
+
+.botonb:active{ 
+    box-shadow: 0px 2px 2px #000000 inset;
+    background-color: rgb(165, 165, 165);
+} 
   
 .botony{ 
     grid-area: 2 / 1 / 3 / 2; 
@@ -149,6 +227,11 @@
     align-items: center;
     justify-self: right;
     align-self: center;
+}
+
+.botony:active{ 
+    box-shadow: 0px 2px 2px #000000 inset;
+    background-color: rgb(165, 165, 165);
 }
   
 .contenedorstartselect{
@@ -187,6 +270,11 @@
     box-shadow: 0px 0px 3px #b9b9b9 inset;
     box-shadow: 0px 0px 10px #000000;
 }
+
+.boton-start:active{ 
+    box-shadow: 0px 2px 2px #000000 inset;
+    background-color: rgb(165, 165, 165);
+}
   
 .boton-select{ 
     grid-area: 3 / 2 / 4 / 3; 
@@ -199,6 +287,11 @@
     margin-top: 3%;
 }
 
+.boton-select:active{ 
+    box-shadow: 0px 2px 2px #000000 inset;
+    background-color: rgb(165, 165, 165);
+}
+  
 .cruceta{  
     display: grid;
     grid-template-columns: repeat(3, 0.3fr);
@@ -210,7 +303,6 @@
     justify-self: center;
     align-self: center;
     justify-content: center;
-    gap: 1%;
 }
   
 .cruceta-arriba{ 
@@ -229,7 +321,7 @@
 }
 
 .cruceta-arriba:active{ 
-    box-shadow: 0px 2px 2px #000000;
+    box-shadow: 0px 2px 2px #000000 inset;
     background-color: rgb(165, 165, 165);
 }
   
@@ -249,7 +341,7 @@
 }
  
 .cruceta-izq:active{ 
-    box-shadow: 0px 2px 2px #000000;
+    box-shadow: 0px 2px 2px #000000 inset;
     background-color: rgb(165, 165, 165);
 }
 
@@ -269,7 +361,7 @@
 }
 
 .cruceta-der:active{ 
-    box-shadow: 0px 2px 2px #000000;
+    box-shadow: 0px 2px 2px #000000 inset;
     background-color: rgb(165, 165, 165);
 }
   
@@ -289,7 +381,7 @@
 }
 
 .cruceta-abajo:active{ 
-    box-shadow: 0px 2px 2px #000000;
+    box-shadow: 0px 2px 2px #000000 inset;
     background-color: rgb(165, 165, 165);
 }
   
@@ -307,39 +399,108 @@
 }
 
 .altavoces-derecha{ 
-    grid-area: 3 / 8 / 4 / 9; 
     display: grid;
-    grid-template-columns: repeat(3, 0.5fr);
-    grid-template-rows: repeat(2, 0.5fr);
+    grid-template-columns: repeat(3, 0.2fr);
+    grid-template-rows: repeat(2, 0.3fr);
     width: 30%;
     height: 50%;
+    justify-self: center;
+    align-self: center;
+    padding-left: 5%;
 }
   
 .altavoces-izquierda{ 
-    grid-area: 3 / 4 / 4 / 5; 
     display: grid;
-    grid-template-columns: repeat(3, 0.5fr);
-    grid-template-rows: repeat(2, 0.5fr);
+    grid-template-columns: repeat(3, 0.2fr);
+    grid-template-rows: repeat(2, 0.3fr);
     width: 30%;
     height: 50%;
+    padding-left: 7%;
 }
   
+.altavoz-1{
+    grid-area: 1 / 1 / 2 / 2;
+    background-color: rgb(0, 0, 0);
+    border-radius: 50%;
+    width: 20%;
+    height: 25%;
+    justify-self: right;
+    box-shadow: 0px 0px 2px black;
+}
+
+.altavoz-2{
+    grid-area: 2 / 1 / 3 / 2;
+    background-color: rgb(0, 0, 0);
+    border-radius: 50%;
+    width: 20%;
+    height: 25%;
+    justify-self: right;
+    box-shadow: 0px 0px 2px black;
+}
+
+.altavoz-3{
+    grid-area: 1 / 2 / 2 / 3;
+    background-color: rgb(0, 0, 0);
+    border-radius: 50%;
+    width: 20%;
+    height: 25%;
+    justify-self: right;
+    box-shadow: 0px 0px 2px black;
+}
+
+.altavoz-4{
+    grid-area: 1 / 3 / 2 / 4;
+    background-color: rgb(0, 0, 0);
+    border-radius: 50%;
+    width: 20%;
+    height: 25%;
+    justify-self: right;
+    box-shadow: 0px 0px 2px black;
+}
+
+.altavoz-5{
+    grid-area: 2 / 2 / 3 / 3;
+    background-color: rgb(0, 0, 0);
+    border-radius: 50%;
+    width: 20%;
+    height: 25%;
+    justify-self: right;
+    box-shadow: 0px 0px 2px black;
+}
+
+.altavoz-6{
+    grid-area: 2 / 3 / 3 / 4;
+    background-color: rgb(0, 0, 0);
+    border-radius: 50%;
+    width: 20%;
+    height: 25%;
+    justify-self: right;
+    box-shadow: 0px 0px 2px black;
+}
+
 .boton-encendido{ 
-    grid-area: 7 / 7 / 8 / 8; 
-    background-color: #3D3434;
-    width: 2%;
+    grid-area: 7 / 6 / 8 / 7; 
+    background-color: rgb(236, 236, 236);
+    width: 3%;
     height: 30%;
     display: flex;
-    justify-self: left;
+    justify-self: center;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
+    margin-left: 3%;
+    box-shadow: 0px 0px 1px rgb(255, 255, 255);
+    box-shadow: 0px 0px 1px rgb(255, 255, 255) inset;
 }
-  
-.microfono{ 
-    grid-area: 6 / 6 / 7 / 7; 
-}
-  
-.bateria{ 
-    grid-area: 6 / 8 / 7 / 9; 
+
+.palo{
+    grid-area: 3 / 7 / 8 / 8;
+    width: 7%;
+    height: 50%;
+    background-color: rgb(255, 255, 255);
+    align-self: center;
+    border-bottom-left-radius: 40%;
+    border-bottom-right-radius: 40%;
+    box-shadow: 0px 0px 10px rgb(0, 0, 0);
+    box-shadow: 0px 0px 10px rgb(236, 236, 236) inset;
 }
   
