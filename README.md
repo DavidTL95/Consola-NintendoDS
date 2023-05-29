@@ -14,6 +14,10 @@
     -CSS
     -JavaScript
 
+  # Imagen de referencia
+  
+   ![461039_603eef08-f85c-40b4-80c5-e21814740f55](https://github.com/DavidTL95/Consola-NintendoDS/assets/134488502/ea478df3-6919-4cf0-9543-757b311c621a)
+
   # Vistas
 
   ![DS](https://github.com/DavidTL95/Consola-NintendoDS/assets/134488502/4e32a098-09eb-4a52-9cef-74808d87d78d)
